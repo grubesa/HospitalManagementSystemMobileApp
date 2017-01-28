@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hospital Management System</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_doctor">DoctorActivity</string>
+    <string name="title_activity_person_details">PersonDetailsActivity</string>
+    <string name="title_doctor_list">Doctors</string>
+    <string name="title_doctor_detail">Doctor Detail</string>
+</resources>

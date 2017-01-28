@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hms.josip.hospitalmanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.EmployeesActivity" />
+        <activity android:name=".activities.Doctor.DoctorActivity" />
+        <activity android:name=".activities.Doctor.DoctorDetailsActivity" />
+        <activity android:name=".activities.Nurse.NurseActivity" />
+        <activity android:name=".activities.Nurse.NurseDetailsActivity" />
+        <activity android:name=".activities.Receptionist.ReceptionistActivity" />
+        <activity android:name=".activities.Receptionist.ReceptionistDetailsActivity" />
+        <activity android:name=".activities.Patient.PatientActivity" />
+        <activity android:name=".activities.Patient.PatientDetailsActivity" />
+        <activity android:name=".activities.Doctor.AddNewDoctorActivity" />
+        <activity android:name=".activities.Room.RoomActivity" />
+        <activity android:name=".activities.Room.AddNewRoomActivity" />
+        <activity android:name=".activities.Room.RoomDetailsActivity" />
+        <activity android:name=".activities.Patient.AddNewPatientActivity" />
+        <activity android:name=".activities.Receptionist.AddNewReceptionistActivity" />
+        <activity android:name=".activities.Nurse.AddNewNurseActivity" />
+        <activity android:name=".activities.Medicine.MedicineActivity" />
+        <activity android:name=".activities.Medicine.AddNewMedicineActivity"></activity>
+    </application>
+
+</manifest>
