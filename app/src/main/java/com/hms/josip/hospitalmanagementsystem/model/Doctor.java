@@ -33,10 +33,13 @@ public class Doctor extends Employee implements Serializable {
         switch (status) {
             case "Visiting":
                 this.status = 0;
+                break;
             case "Permanent":
                 this.status = 1;
+                break;
             case "Trainee":
                 this.status = 2;
+                break;
         }
     }
 

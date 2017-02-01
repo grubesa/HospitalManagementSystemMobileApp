@@ -57,7 +57,7 @@ public class AddNewDoctorActivity extends AppCompatActivity {
         this.finish();
     }
 
-    private void addNewDoctor() {
+    public void addNewDoctor() {
         try {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(new Config().getURL()).
@@ -107,16 +107,24 @@ public class AddNewDoctorActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.male:
                 if (checked)
-                    doctor.setSex("0");
+                    doctor.setSex("Male");
                     break;
             case R.id.female:
                 if (checked)
-                    doctor.setSex("1");
+                    doctor.setSex("Female");
                     break;
         }
     }
 
     public void goBack(View view) {
         this.finish();
+    }
+
+    public Doctor getDoctor(){
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
     }
 }

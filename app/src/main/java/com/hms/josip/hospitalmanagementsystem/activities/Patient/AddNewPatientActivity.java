@@ -79,11 +79,11 @@ public class AddNewPatientActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.male:
                 if (checked)
-                    patient.setSex("0");
+                    patient.setSex("Male");
                 break;
             case R.id.female:
                 if (checked)
-                    patient.setSex("1");
+                    patient.setSex("Female");
                 break;
         }
     }

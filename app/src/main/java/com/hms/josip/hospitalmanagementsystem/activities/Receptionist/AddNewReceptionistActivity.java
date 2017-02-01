@@ -85,11 +85,11 @@ public class AddNewReceptionistActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.male:
                 if (checked)
-                    receptionist.setSex("0");
+                    receptionist.setSex("Male");
                 break;
             case R.id.female:
                 if (checked)
-                    receptionist.setSex("1");
+                    receptionist.setSex("Female");
                 break;
         }
     }
